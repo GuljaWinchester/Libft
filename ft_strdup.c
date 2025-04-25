@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 14:23:06 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/18 15:26:24 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/25 12:57:52 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ char	*ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
-int	main(void)
-{
-	char str[] = "ByeBitch";
-	printf("%s\n", ft_strdup(str));
-	printf("%s\n", strdup(str));
-	return (0);
-}
+// int	main(void)
+//{
+//	char str[] = "ByeBitch";
+//	printf("%s\n", ft_strdup(str));
+//	printf("%s\n", strdup(str));
+//	return (0);
+//}

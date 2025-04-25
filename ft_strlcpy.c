@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:49:28 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/21 13:20:36 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/25 14:13:29 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 }
 int	main(void)
 {
-	char	d[0];
+	char	d[10];
 	char	s[] = "ByeBitch";
 
-	printf("%zu\n", ft_strlcpy(d, s, 0));
+	printf("%zu\n", ft_strlcpy(d, s, 4));
 	return (0);
 }

@@ -6,23 +6,39 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:39:26 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/24 15:06:37 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/25 13:10:44 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	
+	size_t	d_len;
+	size_t	s_len;
+
+	d_len = ft_strlen(dst);
+	s_len = ft_strlen(src);
+	if (d_len >= size)
+		d_len = size;
+	if (d_len == size)
+		return (d_len + s_len);
+	if (size > d_len + s_len)
+		ft_memcpy(dst + d_len, src, s_len + 1);
+	else
+	{
+		ft_memcpy(dst + d_len, src, size - d_len - 1);
+		dst[d_len - 1] = '\0';
+	}
+	return (d_len + s_len);
 }
 int	main(void)
 {
 	char	d[15] = "Bye";
 	char	s[] = "Bitch";
 
-	strlcat(d, s, 101);
-	printf("%s\n", d);
+	printf("%zu\n", ft_strlcat(d, s, 15));
 	return (0);
 }

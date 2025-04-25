@@ -6,16 +6,16 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:00:56 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/17 15:11:39 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/25 14:12:07 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -24,9 +24,9 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-int	main(void)
-{
-	char s[] = "ByeBitch";
-	printf("%d\n", ft_strlen(s));
-	return (0);
-}
+// int	main(void)
+//{
+//	char s[] = "ByeBitch";
+//	printf("%zu\n", ft_strlen(s));
+//	return (0);
+//}
