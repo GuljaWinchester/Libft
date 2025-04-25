@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/17 15:00:56 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 14:22:27 by gperedny         ###   ########.fr       */
+/*   Created: 2025/04/25 14:53:35 by gperedny          #+#    #+#             */
+/*   Updated: 2025/04/25 15:06:51 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <ctype.h>
 #include <stdio.h>
-#include <string.h>
 
-size_t	ft_strlen(const char *str)
+int	ft_toupper(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	if (c >= 'a' || c <= 'z')
+		return (c - 32);
+	return (c);
 }
 // int	main(void)
 //{
-//	char s[] = "ByeBitch";
-//	printf("%zu\n", ft_strlen(s));
+//	printf("%d\n", ft_toupper('b'));
 //	return (0);
 //}

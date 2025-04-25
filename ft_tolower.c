@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/17 15:00:56 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 14:22:27 by gperedny         ###   ########.fr       */
+/*   Created: 2025/04/25 15:07:56 by gperedny          #+#    #+#             */
+/*   Updated: 2025/04/25 15:14:27 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <ctype.h>
 #include <stdio.h>
-#include <string.h>
 
-size_t	ft_strlen(const char *str)
+int	ft_tolower(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	if (c >= 'A' || c <= 'Z')
+		return (c - 32);
+	return (c);
 }
-// int	main(void)
-//{
-//	char s[] = "ByeBitch";
-//	printf("%zu\n", ft_strlen(s));
-//	return (0);
-//}
+int	main(void)
+{
+	printf("%d\n", ft_tolower('b'));
+	return (0);
+}

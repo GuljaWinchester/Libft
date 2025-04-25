@@ -6,10 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 14:39:14 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 14:11:56 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/25 14:37:53 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,12 +27,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		*d++ = *s++;
 		n--;
 	}
-	return (d);
+	return (dest);
 }
 // int	main(void)
 //{
 //	char s[] = "Bitch";
-//	char d[4] = "";
+//	char d[6] = "";
 //	printf("%s\n%s\n", s, d);
 //	ft_memcpy(d, s, 5 * sizeof(char));
 //	printf("%s\n%s\n", s, d);
