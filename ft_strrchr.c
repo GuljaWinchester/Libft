@@ -1,26 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/25 14:53:35 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 15:37:04 by gperedny         ###   ########.fr       */
+/*   Created: 2025/04/27 13:45:12 by gperedny          #+#    #+#             */
+/*   Updated: 2025/04/27 15:04:31 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 #include <stdio.h>
+#include <string.h>
 
-int	ft_toupper(int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	if (c >= 'a' || c <= 'z')
-		return (c - 32);
-	return (c);
+	unsigned int	i;
+
+	i = ft_strlen(s);
+	if (s == NULL)
+		return (NULL);
+	while (i > 0 && s[i] != (char)c)
+	{
+		i--;
+	}
+	if (s[i] == (char)c)
+	{
+		return ((char *)(s + i));
+	}
+	return (NULL);
 }
 int	main(void)
 {
-	printf("%d\n", ft_toupper('b'));
+	char s[] = "ByeBitch";
+	int c = ' ';
+	printf("mine %s\n", ft_strrchr(s, c));
+	printf("your %s\n", strrchr(s, c));
 	return (0);
 }

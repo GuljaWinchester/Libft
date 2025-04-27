@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/25 14:53:35 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 15:37:04 by gperedny         ###   ########.fr       */
+/*   Created: 2025/04/27 19:13:35 by gperedny          #+#    #+#             */
+/*   Updated: 2025/04/27 19:23:48 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
+#include <string.h>
 
-int	ft_toupper(int c)
+void	*calloc(size_t amount, size_t size)
 {
-	if (c >= 'a' || c <= 'z')
-		return (c - 32);
-	return (c);
-}
-int	main(void)
-{
-	printf("%d\n", ft_toupper('b'));
-	return (0);
+	unsigned char *str;
+	size_t i;
+
+	i = 0;
+	str = malloc(amount * size);
+	if (!str)
+		return (NULL);
+	return (ft_bzero(str, sizeof(char)));
 }

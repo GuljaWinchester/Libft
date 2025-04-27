@@ -1,26 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/25 14:53:35 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 15:37:04 by gperedny         ###   ########.fr       */
+/*   Created: 2025/04/27 15:33:31 by gperedny          #+#    #+#             */
+/*   Updated: 2025/04/27 17:21:27 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
 #include <stdio.h>
+#include <string.h>
 
-int	ft_toupper(int c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (c >= 'a' || c <= 'z')
-		return (c - 32);
-	return (c);
+	size_t			i;
+	unsigned char	*str1;
+	unsigned char	*str2;
+
+	i = 0;
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
+	while (i < n)
+	{
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
+		i++;
+	}
+	return (0);
 }
 int	main(void)
 {
-	printf("%d\n", ft_toupper('b'));
+	char bob[] = "bye";
+	char kuk[] = "bYe";
+	printf("mine %d\n", ft_memcmp(bob, kuk, 2));
+	printf("original %d\n", memcmp(bob, kuk, 2));
 	return (0);
 }
