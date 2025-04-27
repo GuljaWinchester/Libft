@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 15:34:06 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 15:17:29 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/27 19:28:10 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	*ft_strchr(const char *s, int c);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+void	*calloc(size_t amount, size_t size);
 
 #endif
