@@ -6,13 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 14:09:26 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/27 19:24:31 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:51:48 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_bzero(void *s, size_t n)
 {

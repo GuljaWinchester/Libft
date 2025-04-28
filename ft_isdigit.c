@@ -6,12 +6,9 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 17:52:29 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/21 17:16:58 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:56:01 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <ctype.h>
-#include <stdio.h>
 
 int	ft_isdigit(int c)
 {

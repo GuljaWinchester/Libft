@@ -6,16 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 16:16:17 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/21 17:29:47 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:56:28 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int	ft_atoi(const char *str);
 
 int	ft_atoi(const char *str)
 {
@@ -39,10 +34,10 @@ int	ft_atoi(const char *str)
 	}
 	return (res * cm);
 }
-int	main(void)
-{
-	char s[] = "      123A45";
-	printf("%d\n", atoi(s));
-	printf("%d\n", ft_atoi(s));
-	return (0);
-}
+// int	main(void)
+//{
+//	char s[] = "      123A45";
+//	printf("%d\n", atoi(s));
+//	printf("%d\n", ft_atoi(s));
+//	return (0);
+//}

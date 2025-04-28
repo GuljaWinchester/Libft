@@ -6,12 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 15:02:08 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/24 15:02:13 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:52:42 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

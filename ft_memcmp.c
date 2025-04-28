@@ -6,12 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 15:33:31 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/27 17:21:27 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:55:44 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -30,11 +29,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-int	main(void)
-{
-	char bob[] = "bye";
-	char kuk[] = "bYe";
-	printf("mine %d\n", ft_memcmp(bob, kuk, 2));
-	printf("original %d\n", memcmp(bob, kuk, 2));
-	return (0);
-}
+//int	main(void)
+//{
+//	char bob[] = "bye";
+//	char kuk[] = "bYe";
+//	printf("mine %d\n", ft_memcmp(bob, kuk, 2));
+//	printf("original %d\n", memcmp(bob, kuk, 2));
+//	return (0);
+//}

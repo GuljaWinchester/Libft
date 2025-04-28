@@ -6,12 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 17:51:05 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/22 14:08:27 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:52:45 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

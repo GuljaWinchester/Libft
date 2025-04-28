@@ -6,13 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:00:56 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 14:22:27 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:53:06 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 size_t	ft_strlen(const char *str)
 {

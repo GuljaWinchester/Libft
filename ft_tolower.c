@@ -6,12 +6,9 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:07:56 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 15:14:27 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:54:40 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <ctype.h>
-#include <stdio.h>
 
 int	ft_tolower(int c)
 {
@@ -19,8 +16,8 @@ int	ft_tolower(int c)
 		return (c - 32);
 	return (c);
 }
-int	main(void)
-{
-	printf("%d\n", ft_tolower('b'));
-	return (0);
-}
+// int	main(void)
+//{
+//	printf("%d\n", ft_tolower('b'));
+//	return (0);
+//}

@@ -6,12 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 17:36:34 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/27 18:42:49 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:55:13 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -35,13 +34,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-int	main(void)
-{
-	const char haystack[20] = "TutorialsPoint";
-	const char needle[10] = " ";
-	char *result;
+// int	main(void)
+//{
+//	const char haystack[20] = "TutorialsPoint";
+//	const char needle[10] = " ";
+//	char *result;
 
-	result = ft_strnstr(haystack, needle, 5);
-	printf("The substring is: %s\n", result);
-	return (0);
-}
+//	result = ft_strnstr(haystack, needle, 5);
+//	printf("The substring is: %s\n", result);
+//	return (0);
+//}

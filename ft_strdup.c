@@ -6,13 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 14:23:06 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/25 12:57:52 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 12:52:54 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

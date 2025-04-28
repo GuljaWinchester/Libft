@@ -6,12 +6,11 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:26:51 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/27 19:46:52 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/28 18:41:29 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
