@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 15:34:06 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 18:41:30 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/04/29 19:23:15 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,11 @@ void	*ft_calloc(size_t amount, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strjoin(const char *s1, const char *s2);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
