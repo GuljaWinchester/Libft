@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 14:39:26 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 12:55:33 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:51:02 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	else
 	{
 		ft_memcpy(dst + d_len, src, size - d_len - 1);
-		dst[d_len - 1] = '\0';
+		dst[size - 1] = '\0';
 	}
 	return (d_len + s_len);
 }
-// int	main(void)
-//{
-//	char	d[15] = "Bye";
-//	char	s[] = "Bitch";
-
-//	printf("%zu\n", ft_strlcat(d, s, 15));
-//	return (0);
-//}

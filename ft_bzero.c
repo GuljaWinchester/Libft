@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 14:09:26 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 12:51:48 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:38:21 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,3 @@ void	*ft_bzero(void *s, size_t n)
 	}
 	return (s);
 }
-// int	main(void)
-//{
-//	char s[] = "ByeBitch";
-//	printf("%s\n", s);
-//	ft_bzero(s + 3, 3 * sizeof(char));
-//	printf("%s\n", s);
-//}

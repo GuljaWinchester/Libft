@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:00:56 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 12:53:06 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:51:40 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,3 @@ size_t	ft_strlen(const char *str)
 	}
 	return (i);
 }
-// int	main(void)
-//{
-//	char s[] = "ByeBitch";
-//	printf("%zu\n", ft_strlen(s));
-//	return (0);
-//}

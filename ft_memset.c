@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 17:51:05 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 12:52:45 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:43:30 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-// int	main(void)
-//{
-//	char expl[50] = "Byebitch";
-//	printf("%s\n", expl);
-//	printf("%s\n", ft_memset(expl + 3, 'B', 1 * sizeof(char)));
-//	printf("%s\n", expl);
-//	return (0);
-//}

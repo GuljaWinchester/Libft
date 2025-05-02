@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:05:04 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/29 19:06:49 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:57:29 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *str, int fd)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')

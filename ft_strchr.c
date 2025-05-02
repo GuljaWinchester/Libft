@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:26:51 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 18:41:29 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:46:39 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-// int	main(void)
-//{
-//	char s[] = "Byebitch";
-//	int c = ' ';
-//	printf("mine: %s\n", ft_strchr(s, c));
-//	printf("original: %s\n", strchr(s, c));
-//	return (0);
-//}

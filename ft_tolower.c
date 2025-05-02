@@ -6,18 +6,13 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:07:56 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 12:54:40 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:56:37 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if (c >= 'A' || c <= 'Z')
-		return (c - 32);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
 	return (c);
 }
-// int	main(void)
-//{
-//	printf("%d\n", ft_tolower('b'));
-//	return (0);
-//}

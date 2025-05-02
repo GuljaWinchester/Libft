@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:08:27 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/29 19:10:35 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:44:22 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);
-	write(1, "\n", 1);
+	write(fd, "\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 15:49:28 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 12:55:27 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:51:17 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,12 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	len;
 
 	len = 0;
-	while (src[len] && --size)
+	if (size == 0)
+		return (ft_strlen(src));
+	while (src[len] && len < size - 1)
 	{
 		*dst++ = src[len++];
 	}
 	*dst = '\0';
-	while (src[len])
-		++len;
-	return (len);
+	return (ft_strlen(src));
 }
-// int	main(void)
-//{
-//	char	d[10];
-//	char	s[] = "ByeBitch";
-
-//	printf("%zu\n", ft_strlcpy(d, s, 4));
-//	return (0);
-//}

@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:12:26 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/29 19:22:58 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:48:17 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,4 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	c = (nb % 10) + '0';
 	write(fd, &c, 1);
-}
-int	main(void)
-{
-	int	NB;
-
-	NB = -2147483648;
-	ft_putnbr_fd(NB, 1);
-	return (0);
 }

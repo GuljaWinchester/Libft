@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 18:17:14 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/29 18:59:43 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:52:21 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,18 @@
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char *res;
-	unsigned int i;
+	char			*res;
+	unsigned int	i;
 
-	res = malloc((sizeof(char *)) * ft_strlen(s));
+	res = malloc((sizeof(char)) * ft_strlen(s) + 1);
 	if (!res)
 		return (NULL);
+	i = 0;
 	while (i < ft_strlen(s))
 	{
 		res[i] = (*f)(i, s[i]);
 		i++;
 	}
-	res[i] = 0;
+	res[i] = '\0';
 	return (res);
 }

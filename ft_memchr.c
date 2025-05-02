@@ -6,7 +6,7 @@
 /*   By: gperedny <gperedny@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 14:15:50 by gperedny          #+#    #+#             */
-/*   Updated: 2025/04/28 18:36:26 by gperedny         ###   ########.fr       */
+/*   Updated: 2025/05/02 14:41:55 by gperedny         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-// int	main(void)
-//{
-//	char *s = "ByeBitch";
-//	printf("%s\n", s);
-//	printf("%s\n", (char *)ft_memchr(s, 'B', 0));
-//	printf("%s\n", s);
-//}
